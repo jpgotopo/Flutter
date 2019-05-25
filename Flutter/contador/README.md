@@ -2,9 +2,9 @@
 
 A new Flutter project,
 
-Desarrollado por: cerbero.dev
-En base al curso de: Fernando Herrera - Udemy
-Inspirado en la aplicacion de inicio de Flutter
+- Desarrollado por: cerbero.dev
+- En base al curso de: Fernando Herrera - Udemy
+- Inspirado en la aplicacion de inicio de Flutter
 
 ## Getting Started
 
@@ -18,3 +18,13 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter, view our 
 [online documentation](https://flutter.dev/docs), which offers tutorials, 
 samples, guidance on mobile development, and a full API reference.
+
+## Cerberodev
+
+Autodidacta, Firebase, Angular, Ionic, Javascript, Flutter.💙👨🏾‍💻 
+
+###Web's y Redes Sociales: 
+
+- [Portafolio] (https://cerbero.dev)  
+- [Wira Team](https://wirateam.dev) 
+
