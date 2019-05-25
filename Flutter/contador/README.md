@@ -1,6 +1,10 @@
 # contador
 
-A new Flutter project.
+A new Flutter project,
+
+Desarrollado por: cerbero.dev
+En base al curso de: Fernando Herrera - Udemy
+Inspirado en la aplicacion de inicio de Flutter
 
 ## Getting Started
 
