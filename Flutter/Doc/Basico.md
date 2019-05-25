@@ -1,19 +1,14 @@
-Temas puntuales de la sección
+##Temas puntuales de la sección
+
 En esta sección tocaremos temas sobre:
 
-Stateless
-
-Stateful
-
-Scaffolds
-
-Estilos
-
-Botones
-
-Manejo de estado básico
-
-Y más
+- Stateless
+- Stateful
+- Scaffolds
+- Estilos
+- Botones
+- Manejo de estado básico
+- Y más
 
 Esta sección tiene por objetivo comprender el código propio de Flutter explicando absolutamente cada línea de código que escribiremos.
 
