@@ -23,8 +23,8 @@ samples, guidance on mobile development, and a full API reference.
 
 Autodidacta, Firebase, Angular, Ionic, Javascript, Flutter.💙👨🏾‍💻 
 
-###Web's y Redes Sociales: 
+##Web's y Redes Sociales: 
 
-- [Portafolio] (https://cerbero.dev)  
+- [Portafolio](https://cerbero.dev)  
 - [Wira Team](https://wirateam.dev) 
 
