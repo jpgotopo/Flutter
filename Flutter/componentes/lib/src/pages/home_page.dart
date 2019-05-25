@@ -22,7 +22,13 @@ class HomePage extends StatelessWidget {
     Widget _lista() {
 
 
-      print( menuProvider.opciones );
+      // print( menuProvider.opciones );
+      menuProvider.cargarData().then( (opciones){
+
+        print( '_lista' );
+        print( opciones );
+
+      });
 
       return ListView(
         children: _listaItems(),
@@ -33,12 +39,14 @@ class HomePage extends StatelessWidget {
     List<Widget>  _listaItems() {
 
       return [
+
         ListTile( onTap: (){}, title: Text('Hello World', style: _estiloListTile,) ),
         Divider(color: Colors.indigoAccent, ),
         ListTile( onTap: (){}, title: Text('Hello World', style: _estiloListTile,) ),
         Divider(color: Colors.indigoAccent, ),
         ListTile( onTap: (){}, title: Text('Hello World', style: _estiloListTile,) ),
         Divider(color: Colors.indigoAccent, ),
+
       ];
 
       }

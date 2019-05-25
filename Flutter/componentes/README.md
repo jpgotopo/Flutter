@@ -4,7 +4,7 @@ A new Flutter project,
 
 - Desarrollado por: [Pierre Guillen](https://cerbero.dev) 
 - En base al curso de: Fernando Herrera - [Udemy](https://www.udemy.com/flutter-ios-android-fernando-herrera/?couponCode=FLUTTER-10)
-- Inspirado en la aplicacion de inicio de Flutter
+
 
 ## Getting Started
 
