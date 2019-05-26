@@ -24,13 +24,15 @@ final _estiloFlatButton = new TextStyle (fontSize: 20, fontFamily: 'Dax-Regular'
       body: ListView(
         padding: EdgeInsets.all(10),
         children: <Widget>[
-          _cardTipo1()
+          _cardTipo1(),
+          SizedBox(height: 30),
+          _cardTipo2(),
         ],
       ),
     );
   }
 
-  _cardTipo1() {
+  Widget _cardTipo1() {
 
     return Card(
       child: Column(
@@ -50,18 +52,47 @@ final _estiloFlatButton = new TextStyle (fontSize: 20, fontFamily: 'Dax-Regular'
                 onPressed: (){},
                 color: Colors.yellowAccent,
               ),
-              Padding(padding: EdgeInsets.all(10)),
+              Padding(padding: EdgeInsets.all(10.0)),
               FlatButton(
                 child: Text('Ok', style: _estiloFlatButton,),
                 onPressed: (){},
                 color: Colors.yellowAccent,
               ),
-              Padding(padding: EdgeInsets.all(10)),
+              Padding(padding: EdgeInsets.all(10.0)),
           
           ],
           )
         ],
         ),
+    );
+
+
+  }
+
+  Widget _cardTipo2() {
+
+    return Card(
+      child: Column(
+        children: <Widget>[
+
+          FadeInImage(
+            image: NetworkImage( 'http://www.miguelclaro.com/wp/wp-content/uploads/2013/07/AndromedaAirGlow-Pano1785-net.jpg' ),
+            placeholder: AssetImage( 'assets/jar-loading.gif' ),
+            fadeInDuration: Duration( milliseconds: 200),
+            height: 300.0,
+            fit: BoxFit.cover,
+          ),
+
+          //Image(
+          //  image: NetworkImage('http://www.miguelclaro.com/wp/wp-content/uploads/2013/07/AndromedaAirGlow-Pano1785-net.jpg'),
+          //),
+          Container(
+            padding: EdgeInsets.all(10),
+            child: Text('Andromeda')
+            ),
+        ],
+        ),
+
     );
 
 

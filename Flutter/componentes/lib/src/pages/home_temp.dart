@@ -1,4 +1,4 @@
-import 'dart:collection';
+//import 'dart:collection';
 
 import 'package:flutter/material.dart';
 
@@ -26,24 +26,18 @@ class HomePageTemp extends StatelessWidget {
       );
   }
 
-  List<Widget> _crearItems(){
-
-    List<Widget> lista = new List<Widget>();
-
-    for (String opt in opciones) {
-      
-      final tempWidget = ListTile(
-
-        title: Text( opt , style: _estiloListTile),
-      );
-
-      lista.add(tempWidget);
-      lista.add(Divider(color: Colors.indigoAccent, ));
-
-    }
-
-    return lista;
-  }
+  //List<Widget> _crearItems(){
+  //  List<Widget> lista = new List<Widget>();
+  //  for (String opt in opciones) {
+  //    
+  //    final tempWidget = ListTile(
+  //      title: Text( opt , style: _estiloListTile),
+  //    );
+  //    lista.add(tempWidget);
+  //    lista.add(Divider(color: Colors.indigoAccent, ));
+  //  }
+  //  return lista;
+  //}
 
 List<Widget> _crearItemsCorto() {
 
