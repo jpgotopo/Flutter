@@ -1,4 +1,4 @@
-import 'package:componentes/src/pages/alert_page.dart';
+
 import 'package:componentes/src/providers/menu_provider.dart';
 import 'package:componentes/src/utils/icono_string_util.dart';
 import 'package:flutter/material.dart';
@@ -12,9 +12,9 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        title: Text('Componentes | cerbero.dev', style: _estiloAppBar,),
         centerTitle: true,
         backgroundColor: Colors.yellowAccent,
-        title: Text('Componentes | cerbero.dev', style: _estiloAppBar,),
         ),
       body: _lista(),
     );

@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
       routes: getApplicationRoutes(),
       onGenerateRoute: ( RouteSettings settings ){
         return MaterialPageRoute(
-          builder: ( BuildContext context) => AlertPage() 
+          builder: ( BuildContext context) => AlertPage() // Cualquier otra ruta nos envia al AlerPage()
           );
       },
 
