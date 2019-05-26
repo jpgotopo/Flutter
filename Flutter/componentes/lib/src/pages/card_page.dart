@@ -25,8 +25,53 @@ final _estiloFlatButton = new TextStyle (fontSize: 20, fontFamily: 'Dax-Regular'
         padding: EdgeInsets.all(10),
         children: <Widget>[
           _cardTipo1(),
-          SizedBox(height: 30),
+          SizedBox(height: 10),
           _cardTipo2(),
+          SizedBox(height: 10),
+          _cardTipo1(),
+          SizedBox(height: 10),
+          _cardTipo2(),
+          SizedBox(height: 10),
+          _cardTipo1(),
+          SizedBox(height: 10),
+          _cardTipo2(),
+          SizedBox(height: 10),
+          _cardTipo1(),
+          SizedBox(height: 10),
+          _cardTipo2(),
+          SizedBox(height: 10),
+          _cardTipo1(),
+          SizedBox(height: 10),
+          _cardTipo2(),
+          SizedBox(height: 10),
+          _cardTipo1(),
+          SizedBox(height: 10),
+          _cardTipo2(),
+          SizedBox(height: 10),
+          _cardTipo1(),
+          SizedBox(height: 10),
+          _cardTipo2(),
+          SizedBox(height: 10),
+          _cardTipo1(),
+          SizedBox(height: 10),
+          _cardTipo2(),
+          SizedBox(height: 10),
+          _cardTipo1(),
+          SizedBox(height: 10),
+          _cardTipo2(),
+          SizedBox(height: 10),
+          _cardTipo1(),
+          SizedBox(height: 10),
+          _cardTipo2(),
+          SizedBox(height: 10),
+          _cardTipo1(),
+          SizedBox(height: 10),
+          _cardTipo2(),
+          SizedBox(height: 10),
+          _cardTipo1(),
+          SizedBox(height: 10),
+          _cardTipo2(),
+          SizedBox(height: 10),
         ],
       ),
     );
@@ -35,6 +80,10 @@ final _estiloFlatButton = new TextStyle (fontSize: 20, fontFamily: 'Dax-Regular'
   Widget _cardTipo1() {
 
     return Card(
+      elevation: 10.0,
+      shape: RoundedRectangleBorder(
+        borderRadius:  BorderRadius.circular(20),
+      ),
       child: Column(
         children: <Widget>[
           ListTile(
@@ -71,15 +120,21 @@ final _estiloFlatButton = new TextStyle (fontSize: 20, fontFamily: 'Dax-Regular'
 
   Widget _cardTipo2() {
 
-    return Card(
+    final card = Container(
+    
+      // clipBehavior: Clip.antiAlias,
+      //shape: RoundedRectangleBorder(
+      //  borderRadius:  BorderRadius.circular(20),
+      //),
       child: Column(
         children: <Widget>[
 
           FadeInImage(
             image: NetworkImage( 'http://www.miguelclaro.com/wp/wp-content/uploads/2013/07/AndromedaAirGlow-Pano1785-net.jpg' ),
             placeholder: AssetImage( 'assets/jar-loading.gif' ),
-            fadeInDuration: Duration( milliseconds: 200),
+            fadeInDuration: Duration( milliseconds: 200 ),
             height: 300.0,
+            width: 500,
             fit: BoxFit.cover,
           ),
 
@@ -88,11 +143,31 @@ final _estiloFlatButton = new TextStyle (fontSize: 20, fontFamily: 'Dax-Regular'
           //),
           Container(
             padding: EdgeInsets.all(10),
-            child: Text('Andromeda')
+            child: Text('Andromeda'),
+          
+          
             ),
         ],
         ),
+    );
 
+    return Container(
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(30.0),
+        color: Colors.deepPurpleAccent,
+        boxShadow: <BoxShadow>[
+          BoxShadow( // Para poner Sombras
+            color: Colors.black26,
+            blurRadius: 10.0,
+            spreadRadius: 2.0,
+            offset: Offset(2.0, 10.0)
+          ),
+        ]
+      ),
+      child: ClipRRect(
+        borderRadius: BorderRadius.circular(30.0),
+        child: card,
+      ),
     );
 
 

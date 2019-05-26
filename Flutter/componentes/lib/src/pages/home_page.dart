@@ -26,7 +26,7 @@ class HomePage extends StatelessWidget {
       // menuProvider.cargarData()
       return FutureBuilder(
         future: menuProvider.cargarData(),
-        initialData: [],
+        initialData: [], // tambien soluciona el error del foreach
         builder: (BuildContext context, AsyncSnapshot<List<dynamic>> snapshot){
 
           // print( 'builder');
