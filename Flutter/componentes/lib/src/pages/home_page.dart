@@ -26,7 +26,7 @@ class HomePage extends StatelessWidget {
       // menuProvider.cargarData()
       return FutureBuilder(
         future: menuProvider.cargarData(),
-        // initialData: [],
+        initialData: [],
         builder: (BuildContext context, AsyncSnapshot<List<dynamic>> snapshot){
 
           // print( 'builder');
@@ -40,6 +40,8 @@ class HomePage extends StatelessWidget {
     List<Widget>  _listaItems( List<dynamic> data, BuildContext context) {
 
       final List<Widget> opciones = [];
+
+      // if (data == null ) { return []; } // Soluciona el error del foreach
 
       data.forEach((opt){
 
