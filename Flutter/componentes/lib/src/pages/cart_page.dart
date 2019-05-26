@@ -57,6 +57,7 @@ final _estiloFlatButton = new TextStyle (fontSize: 20, fontFamily: 'Dax-Regular'
                 color: Colors.yellowAccent,
               ),
               Padding(padding: EdgeInsets.all(10)),
+          
           ],
           )
         ],
