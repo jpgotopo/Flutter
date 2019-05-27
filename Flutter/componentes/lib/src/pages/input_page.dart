@@ -104,6 +104,7 @@ class _InputPageState extends State<InputPage> {
 
   _crearPassword() {
     return TextField(
+      obscureText: true,
       decoration: InputDecoration(
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(30)
@@ -116,7 +117,7 @@ class _InputPageState extends State<InputPage> {
       ),
       onChanged: (valor){
         setState(() {
-          _email = valor;
+          
         });
       },
     );
