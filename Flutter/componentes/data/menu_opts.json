@@ -22,9 +22,24 @@
             "texto": "Animated Container"
         },
         {
-            "ruta" : "Alexis",
+            "ruta" : "inputs",
+            "icon" : "input",
+            "texto": "Inputs"
+        },
+        {
+            "ruta" : "Guillen",
             "icon" : "adb",
-            "texto": "Alexis"
+            "texto": "Guillen"
+        },
+        {
+            "ruta" : "Guillen",
+            "icon" : "adb",
+            "texto": "Guillen"
+        },
+        {
+            "ruta" : "Guillen",
+            "icon" : "adb",
+            "texto": "Guillen"
         },
         {
             "ruta" : "Guillen",

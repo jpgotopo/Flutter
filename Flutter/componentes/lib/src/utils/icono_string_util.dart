@@ -7,6 +7,7 @@ import 'package:flutter/material.dart';
     'folder_open'   : Icons.folder_open,
     'adb'           : Icons.adb,
     'donut_large'   : Icons.donut_large,
+    'input'         : Icons.input,
 
   };
 
