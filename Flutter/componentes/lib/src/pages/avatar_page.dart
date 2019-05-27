@@ -35,7 +35,7 @@ final _estiloAppBar = new TextStyle (fontSize: 25, fontFamily: 'Dax-Regular', co
         child: FadeInImage(
           image: AssetImage('assets/cerberodev.png'),
           placeholder: AssetImage('assets/jar-loading.gif'),
-          fadeInDuration: Duration(milliseconds: 100),
+          fadeInDuration: Duration(milliseconds: 150),
           width: 300,
         ),
       ),
