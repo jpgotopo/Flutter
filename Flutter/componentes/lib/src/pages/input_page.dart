@@ -35,7 +35,6 @@ class _InputPageState extends State<InputPage> {
         children: <Widget>[
           
           _crearInput(),
-          _crearInput2(),
           Divider(),
           _crearPersona(),
         ],
