@@ -7,8 +7,8 @@ class InputPage extends StatefulWidget {
 }
 
 class _InputPageState extends State<InputPage> {
-  String _nombre = '';
-  String _email =' ';
+  String _nombre  =   '';
+  String _email   =   '';
 
 
   final _estiloAppBar = new TextStyle (fontSize: 25, fontFamily: 'Dax-Regular', color: Colors.greenAccent);
@@ -34,6 +34,8 @@ class _InputPageState extends State<InputPage> {
           _crearInput(),
           Divider(),
           _crearEmail(),
+          Divider(),
+          _crearPassword(),
           Divider(),
           _crearPersona(),
 
@@ -97,6 +99,26 @@ class _InputPageState extends State<InputPage> {
     return ListTile(
       title: Text('Welcome $_nombre'),
       subtitle: Text('Email is: $_email'),
+    );
+  }
+
+  _crearPassword() {
+    return TextField(
+      decoration: InputDecoration(
+        border: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(30)
+        ),
+        hintText: 'Password',
+        labelText: 'Pass',
+        suffixIcon: Icon(Icons.security, color: Colors.greenAccent,),
+        icon: Icon(Icons.lock_outline, color: Colors.greenAccent,),
+
+      ),
+      onChanged: (valor){
+        setState(() {
+          _email = valor;
+        });
+      },
     );
   }
 }
