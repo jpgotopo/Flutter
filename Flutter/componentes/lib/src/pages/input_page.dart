@@ -2,19 +2,16 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
 
-
 class InputPage extends StatefulWidget {
-
-
   _InputPageState createState() => _InputPageState();
 }
 
 class _InputPageState extends State<InputPage> {
+  String _nombre = '';
+  String _email =' ';
 
-  String _nombre;
 
   final _estiloAppBar = new TextStyle (fontSize: 25, fontFamily: 'Dax-Regular', color: Colors.greenAccent);
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -36,7 +33,10 @@ class _InputPageState extends State<InputPage> {
           
           _crearInput(),
           Divider(),
+          _crearEmail(),
+          Divider(),
           _crearPersona(),
+
         ],
       ),
     );
@@ -44,6 +44,11 @@ class _InputPageState extends State<InputPage> {
 
   Widget _crearInput() {
     return TextField(
+      onChanged: (valor){
+        setState(() {
+          _nombre = valor;
+        });
+      },
       //autofocus: true,
       textCapitalization: TextCapitalization.sentences,
       decoration: InputDecoration(
@@ -58,19 +63,40 @@ class _InputPageState extends State<InputPage> {
         icon: Icon(Icons.adb, color: Colors.greenAccent,),
 
       ),
+      
+    );
+  }
+
+
+
+
+
+
+  _crearEmail() {
+    return TextField(
+      keyboardType: TextInputType.emailAddress,
+      decoration: InputDecoration(
+        border: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(30)
+        ),
+        hintText: 'Email',
+        labelText: 'Email',
+        suffixIcon: Icon(Icons.alternate_email, color: Colors.greenAccent,),
+        icon: Icon(Icons.email, color: Colors.greenAccent,),
+
+      ),
       onChanged: (valor){
         setState(() {
-          _nombre = valor;
+          _email = valor;
         });
-        
-        
       },
     );
   }
 
-  _crearPersona() {
+    _crearPersona() {
     return ListTile(
       title: Text('Welcome $_nombre'),
+      subtitle: Text('Email is: $_email'),
     );
   }
 }
