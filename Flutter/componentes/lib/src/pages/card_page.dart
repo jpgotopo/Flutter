@@ -4,6 +4,7 @@ class CardPage extends StatelessWidget {
 
 final _estiloAppBar = new TextStyle (fontSize: 25, fontFamily: 'Dax-Regular', color: Colors.yellowAccent);
 final _estiloFlatButton = new TextStyle (fontSize: 20, fontFamily: 'Dax-Regular', color: Colors.deepPurpleAccent);
+final _borderButton = new RoundedRectangleBorder(borderRadius:  BorderRadius.circular(20),);
 
 
   @override
@@ -100,12 +101,14 @@ final _estiloFlatButton = new TextStyle (fontSize: 20, fontFamily: 'Dax-Regular'
                 child: Text('Cancelar', style: _estiloFlatButton,),
                 onPressed: (){},
                 color: Colors.yellowAccent,
+                shape: _borderButton,
               ),
               Padding(padding: EdgeInsets.all(10.0)),
               FlatButton(
                 child: Text('Ok', style: _estiloFlatButton,),
                 onPressed: (){},
                 color: Colors.yellowAccent,
+                shape: _borderButton,
               ),
               Padding(padding: EdgeInsets.all(10.0)),
           
