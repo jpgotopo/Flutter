@@ -10,6 +10,9 @@ class InputPage extends StatefulWidget {
 }
 
 class _InputPageState extends State<InputPage> {
+
+  String _nombre;
+
   final _estiloAppBar = new TextStyle (fontSize: 25, fontFamily: 'Dax-Regular', color: Colors.greenAccent);
 
   @override
@@ -32,8 +35,9 @@ class _InputPageState extends State<InputPage> {
         children: <Widget>[
           
           _crearInput(),
-          SizedBox(height: 10),
           _crearInput2(),
+          Divider(),
+          _crearPersona(),
         ],
       ),
     );
@@ -47,7 +51,7 @@ class _InputPageState extends State<InputPage> {
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(30)
         ),
-        counter: Text('Letras 0'),
+        counter: Text('Letters ${_nombre.length}'),
         hintText: 'Name',
         labelText: 'Name',
         helperText: 'What Is Your Name',
@@ -55,10 +59,19 @@ class _InputPageState extends State<InputPage> {
         icon: Icon(Icons.adb, color: Colors.greenAccent,),
 
       ),
+      onChanged: (valor){
+        setState(() {
+          _nombre = valor;
+        });
+        
+        
+      },
     );
   }
 
-  _crearInput2() {
-    return TextField();
+  _crearPersona() {
+    return ListTile(
+      title: Text('Welcome $_nombre'),
+    );
   }
 }
