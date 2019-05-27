@@ -17,9 +17,9 @@
             "texto": "Cards - Tarjetas"
         },
         {
-            "ruta" : "Pierre",
-            "icon" : "adb",
-            "texto": "Pierre"
+            "ruta" : "animatedContainer",
+            "icon" : "donut_large",
+            "texto": "Animated Container"
         },
         {
             "ruta" : "Alexis",
