@@ -142,15 +142,13 @@ class _InputPageState extends State<InputPage> {
         icon: Icon(Icons.perm_contact_calendar, color: Colors.greenAccent,),
       ),
       onTap: (){
-
         FocusScope.of(context).requestFocus(new FocusNode());
         _selectDate( context );
-
       },
     );
   }
 
-  _selectDate ( BuildContext context ) async {
+  _selectDate( BuildContext context ) async {
 
     DateTime picked = await showDatePicker(
       context: context,
