@@ -153,8 +153,8 @@ class _InputPageState extends State<InputPage> {
     DateTime picked = await showDatePicker(
       context: context,
       initialDate:  new DateTime.now(),
-      firstDate:    new DateTime(2001),
-      lastDate:     new DateTime(2025),
+      firstDate:    new DateTime(1950),
+      lastDate:     new DateTime(2000),
     );
 
     if (picked != null) {
