@@ -8,6 +8,7 @@ import 'package:flutter/material.dart';
     'adb'           : Icons.adb,
     'donut_large'   : Icons.donut_large,
     'input'         : Icons.input,
+    'slider'        : Icons.scatter_plot,
 
   };
 

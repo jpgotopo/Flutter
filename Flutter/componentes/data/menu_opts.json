@@ -27,9 +27,9 @@
             "texto": "Inputs"
         },
         {
-            "ruta" : "Guillen",
-            "icon" : "adb",
-            "texto": "Guillen"
+            "ruta" : "slider",
+            "icon" : "slider",
+            "texto": "Sliders"
         },
         {
             "ruta" : "Guillen",
