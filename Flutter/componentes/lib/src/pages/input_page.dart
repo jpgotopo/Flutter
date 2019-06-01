@@ -9,7 +9,8 @@ class InputPage extends StatefulWidget {
 class _InputPageState extends State<InputPage> {
   String _nombre  =   '';
   String _email   =   '';
-
+  String _fecha   =   '';
+  TextEditingController _inputFieldDateController = new TextEditingController();
 
   final _estiloAppBar = new TextStyle (fontSize: 25, fontFamily: 'Dax-Regular', color: Colors.greenAccent);
   @override
@@ -37,7 +38,11 @@ class _InputPageState extends State<InputPage> {
           Divider(),
           _crearPassword(),
           Divider(),
+          _crearFecha(context),
+          Divider(),
           _crearPersona(),
+          Divider(),
+          
 
         ],
       ),
@@ -121,5 +126,44 @@ class _InputPageState extends State<InputPage> {
         });
       },
     );
+  }
+
+  Widget _crearFecha( BuildContext context) {
+    return TextField(
+      enableInteractiveSelection: false,
+      controller: _inputFieldDateController,
+      decoration: InputDecoration(
+        border: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(30)
+        ),
+        hintText: 'Birthdate',
+        labelText: 'Birthdate',
+        suffixIcon: Icon(Icons.calendar_view_day, color: Colors.greenAccent,),
+        icon: Icon(Icons.perm_contact_calendar, color: Colors.greenAccent,),
+      ),
+      onTap: (){
+
+        FocusScope.of(context).requestFocus(new FocusNode());
+        _selectDate( context );
+
+      },
+    );
+  }
+
+  _selectDate ( BuildContext context ) async {
+
+    DateTime picked = await showDatePicker(
+      context: context,
+      initialDate:  new DateTime.now(),
+      firstDate:    new DateTime(2001),
+      lastDate:     new DateTime(2025),
+    );
+
+    if (picked != null) {
+      setState(() {
+        _fecha = picked.toString(); 
+        _inputFieldDateController.text = _fecha;
+      });
+    }
   }
 }
