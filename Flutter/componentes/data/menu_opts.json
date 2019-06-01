@@ -27,9 +27,9 @@
             "texto": "Inputs"
         },
         {
-            "ruta" : "slider",
-            "icon" : "slider",
-            "texto": "Sliders"
+            "ruta" : "lista",
+            "icon" : "list",
+            "texto": "Lista"
         },
         {
             "ruta" : "Guillen",

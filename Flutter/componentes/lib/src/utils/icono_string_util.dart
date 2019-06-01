@@ -9,6 +9,7 @@ import 'package:flutter/material.dart';
     'donut_large'   : Icons.donut_large,
     'input'         : Icons.input,
     'slider'        : Icons.scatter_plot,
+    'list'        : Icons.list,
 
   };
 
