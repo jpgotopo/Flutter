@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 
 
@@ -15,6 +17,7 @@ class _ListaPageState extends State<ListaPage> {
   List<int> _listaNumeros = new List();
  // List<String> _listaCategoria = ['DOG','CAT','TIGER','LION','HORSE'];
   int _ultimoItem = 0;
+  bool _isLoading = false;
 
   @override
   void initState() {
@@ -22,9 +25,19 @@ class _ListaPageState extends State<ListaPage> {
     _agregar10();
 
     _scrollController.addListener((){
-      if ( _scrollController.position.pixels == _scrollController.position.maxScrollExtent);
-      _agregar10();
+
+      if ( _scrollController.position.pixels == _scrollController.position.maxScrollExtent){
+      //_agregar10();
+      fetchData();
+      }
     });
+  }
+
+  @override
+  void dispose() {
+    // TODO: implement dispose
+    super.dispose();
+    _scrollController.dispose();
   }
 
   @override
@@ -33,7 +46,15 @@ class _ListaPageState extends State<ListaPage> {
       appBar: AppBar(
          title: Text('Listas | cerbero.dev'),
          ),
-      body: _crearLista(),
+      body: Stack(
+        children: <Widget>[
+            _crearLista(),   
+            _crearLoading(), 
+        ],
+      )
+      
+      
+      
     );
   }
 
@@ -74,6 +95,42 @@ class _ListaPageState extends State<ListaPage> {
     setState(() {
       
     });
+  }
+
+
+
+    Future<Null> fetchData() async {
+
+      _isLoading = true;
+      setState(() {});
+
+    final duration= new Duration(seconds:  2);
+    return new Timer( duration, respuestaHTTP );
+
+    }
+
+    
+  
+
+  void respuestaHTTP(){
+
+    _isLoading = false;
+    _agregar10();
+  }
+
+  Widget _crearLoading() {
+
+    if ( _isLoading){
+      return Column(
+      mainAxisSize: MainAxisSize.max,
+      mainAxisAlignment: MainAxisAlignment.end,
+      children: <Widget>[
+        Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+      )
+      ],
+      );
+    }
   }
 
 
