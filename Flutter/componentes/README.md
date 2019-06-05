@@ -1,6 +1,6 @@
-# componentes
+# Componentes
 
-A new Flutter project,
+Aplicacion de componentes de Flutter,
 
 - Desarrollado por: [Pierre Guillen](https://cerbero.dev) 
 
