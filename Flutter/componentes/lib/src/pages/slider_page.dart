@@ -13,12 +13,23 @@ class _SliderPageState extends State<SliderPage> {
   double _valorSlider = 100;
   bool _bloquearCheck = false;
 
+final _estiloAppBar = new TextStyle (fontSize: 25, fontFamily: 'Dax-Regular', color: Colors.red);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text('Sliders | cerbero.dev'),
+          title: Text('Sliders | cerbero.dev', style: _estiloAppBar,),
+        centerTitle: true,
+        backgroundColor: Colors.blueGrey,
         ),
+        floatingActionButton: FloatingActionButton(
+        backgroundColor: Colors.red,
+        child: Icon( Icons.add_to_home_screen, color: Colors.blueGrey,),
+        onPressed: (){
+          Navigator.pop(context);
+        },
+      ),
         body: Container(
           padding: EdgeInsets.only(top: 50.0),
           child: Column(

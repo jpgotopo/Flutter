@@ -1,5 +1,5 @@
-name: componentes
-description: A new Flutter project.
+name: Componentes
+description: Aplicacion de componentes de Flutter, desarrollada por cerbero.dev.
 
 version: 1.0.0+1
 
@@ -17,12 +17,18 @@ dependencies:
   cupertino_icons: ^0.1.2
 
 dev_dependencies:
+  
   flutter_test:
     sdk: flutter
+  flutter_launcher_icons: "^0.7.2"
+
+flutter_icons:
+  android: true 
+  ios: true
+  image_path: "assets/cerberodev.png"
 
 
 flutter:
-
 
   uses-material-design: true
 

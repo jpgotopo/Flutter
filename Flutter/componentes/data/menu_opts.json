@@ -32,19 +32,9 @@
             "texto": "Lista"
         },
         {
-            "ruta" : "Guillen",
+            "ruta" : "slider",
             "icon" : "adb",
-            "texto": "Guillen"
-        },
-        {
-            "ruta" : "Guillen",
-            "icon" : "adb",
-            "texto": "Guillen"
-        },
-        {
-            "ruta" : "Guillen",
-            "icon" : "adb",
-            "texto": "Guillen"
+            "texto": "Slider"
         }
     ]
 }
